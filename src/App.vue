@@ -1,7 +1,11 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary" dark class="px-3">
       <h1>vuetify-jsonschema-form-read-evaluate-print-loop</h1>
+      <v-spacer></v-spacer>
+      <v-btn icon href="https://github.com/cugu/vjsfrepl" target="_blank">
+        <v-icon x-large>mdi-github</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <div class="grid">
@@ -52,7 +56,7 @@ export default Vue.extend({
   }),
 
   watch: {
-    code: function(val) {
+    code: function (val) {
       try {
         let s = JSON.parse(val);
         this.error = "";
