@@ -48,21 +48,21 @@ export default Vue.extend({
     model: {},
     code: "",
     error: "",
+    schema: basic,
   }),
 
-  computed: {
-    schema() {
+  watch: {
+    code: function(val) {
       try {
-        let schema = JSON.parse(this.code);
+        let s = JSON.parse(val);
         this.error = "";
-        return schema;
+        this.schema = s;
       } catch (e) {
-        this.error = "Invalid JSON";
-        return {};
+        this.error = "Invalid JSON: " + e;
+        this.schema = {};
       }
     }
   },
-
   methods: {
     reset() {
       this.code = JSON.stringify(basic, null, 2);
