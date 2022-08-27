@@ -1,19 +1,10 @@
-# vjsfrepl
+<h1 align="center">vjsfrepl</h1>
 
-## Project setup
-```
-yarn install
-```
+[vuetify-jsonschema-form](https://github.com/koumoul-dev/vuetify-jsonschema-form) (vjsf) is a Vue.js component that
+allows you to render a jsonschema as an input form using Vue.js and Vuetify.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+vjsfrepl is a web page to quickly test the form generation in vjsf.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### :arrow_forward: [Open Page](https://cugu.github.io/vjsfrepl/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[![screenshot of vjsfrepl](screenshot.png)](https://cugu.github.io/vjsfrepl/)
